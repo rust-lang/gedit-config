@@ -18,6 +18,6 @@ __Instructions for other GNU/Linux distributions__
 
 3. Copy the rust.lang file and place it in /usr/share/gtksourceview-3.0/language-specs/
 
-Example:
+Example (after extracting the gedit-config-master.zip to the ~/Downloads directory):
 
 > sudo mv /Downloads/gedit-config/share/gtksourceview-3.0/language-specs/rust.lang /usr/share/gtksourceview-3.0/language-specs/
