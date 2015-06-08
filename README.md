@@ -21,3 +21,11 @@ __Instructions for other GNU/Linux distributions__
 Example (after extracting the gedit-config-master.zip to the ~/Downloads directory):
 
 > sudo mv /Downloads/gedit-config/share/gtksourceview-3.0/language-specs/rust.lang /usr/share/gtksourceview-3.0/language-specs/
+
+## License
+
+Rust is primarily distributed under the terms of both the MIT license
+and the Apache License (Version 2.0), with portions covered by various
+BSD-like licenses.
+
+See [LICENSE-APACHE](LICENSE-APACHE), and [LICENSE-MIT](LICENSE-MIT) for details.
