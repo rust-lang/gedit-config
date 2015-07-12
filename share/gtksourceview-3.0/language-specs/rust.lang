@@ -9,7 +9,7 @@ option. This file may not be copied, modified, or distributed
 except according to those terms.
 -->
 
-<!-- Syntax highlighting for the under-development Mozilla Rust language -->
+<!-- Syntax highlighting for the under-development Rust language -->
 
 <language id="rust" _name="Rust" version="2.0" _section="Sources">
   <metadata>
