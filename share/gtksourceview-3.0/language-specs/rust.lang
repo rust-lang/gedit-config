@@ -199,9 +199,7 @@ except according to those terms.
       '|"|
       \\|n|r|t|0|
       x\%{hex_digit}{2}|
-      u{\%{hex_digit}{1,6}}|
-      u\%{hex_digit}{4}|
-      U\%{hex_digit}{8}
+      u{\%{hex_digit}{1,6}}
     </define-regex>
 
     <context id="string_escape" style-ref="def:special-char">
