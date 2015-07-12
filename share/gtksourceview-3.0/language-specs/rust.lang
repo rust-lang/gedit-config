@@ -94,9 +94,7 @@ except according to those terms.
 
     <context id="types" style-ref="type">
 		<keyword>bool</keyword>
-		<keyword>int</keyword>
 		<keyword>isize</keyword>
-		<keyword>uint</keyword>
 		<keyword>usize</keyword>
 		<keyword>i8</keyword>
 		<keyword>i16</keyword>
@@ -159,10 +157,6 @@ except according to those terms.
 		<keyword>None</keyword>
 		<keyword>Ok</keyword>
 		<keyword>Err</keyword>
-		<keyword>Success</keyword>
-		<keyword>Failure</keyword>
-		<keyword>Cons</keyword>
-		<keyword>Nil</keyword>
     </context>
 
     <context id="cconstants" style-ref="constant">
