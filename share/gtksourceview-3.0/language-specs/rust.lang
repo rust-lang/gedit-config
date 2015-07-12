@@ -45,44 +45,51 @@ except according to those terms.
     </context>
 
     <context id="keywords" style-ref="keyword">
+		<keyword>abstract</keyword>
+		<keyword>alignof</keyword>
 		<keyword>as</keyword>
-		<keyword>assert</keyword>
-		<keyword>break</keyword>
+		<keyword>become</keyword>
 		<keyword>box</keyword>
+		<keyword>break</keyword>
 		<keyword>const</keyword>
 		<keyword>continue</keyword>
 		<keyword>crate</keyword>
 		<keyword>do</keyword>
-		<keyword>drop</keyword>
 		<keyword>else</keyword>
 		<keyword>enum</keyword>
-		<keyword>export</keyword>
-		<keyword>extern</keyword>
-		<keyword>fail</keyword>
+		<keyword>final</keyword>
 		<keyword>for</keyword>
 		<keyword>if</keyword>
 		<keyword>impl</keyword>
 		<keyword>in</keyword>
 		<keyword>let</keyword>
-		<keyword>log</keyword>
 		<keyword>loop</keyword>
+		<keyword>macro</keyword>
 		<keyword>match</keyword>
 		<keyword>mod</keyword>
 		<keyword>move</keyword>
 		<keyword>mut</keyword>
+		<keyword>offsetof</keyword>
+		<keyword>override</keyword>
 		<keyword>priv</keyword>
+		<keyword>proc</keyword>
 		<keyword>pub</keyword>
 		<keyword>pure</keyword>
 		<keyword>ref</keyword>
 		<keyword>return</keyword>
+		<keyword>sizeof</keyword>
 		<keyword>static</keyword>
 		<keyword>struct</keyword>
+		<keyword>super</keyword>
 		<keyword>trait</keyword>
+		<keyword>typeof</keyword>
 		<keyword>unsafe</keyword>
+		<keyword>unsized</keyword>
 		<keyword>use</keyword>
 		<keyword>virtual</keyword>
 		<keyword>where</keyword>
 		<keyword>while</keyword>
+		<keyword>yield</keyword>
     </context>
 
     <context id="types" style-ref="type">
@@ -141,6 +148,7 @@ except according to those terms.
     </context>
 
     <context id="self" style-ref="identifier">
+		<keyword>Self</keyword>
 		<keyword>self</keyword>
     </context>
 
