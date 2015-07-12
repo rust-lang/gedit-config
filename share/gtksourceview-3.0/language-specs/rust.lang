@@ -198,16 +198,23 @@ except according to those terms.
     <define-regex id="common_escape" extended="true">
       '|"|
       \\|n|r|t|0|
-      x\%{hex_digit}{2}|
+      x\%{hex_digit}{2}
+    </define-regex>
+
+    <define-regex id="unicode_escape" extended="true">
       u{\%{hex_digit}{1,6}}
     </define-regex>
 
     <context id="string_escape" style-ref="def:special-char">
+      <match>\\\%{common_escape}|\\\%{unicode_escape}</match>
+    </context>
+
+    <context id="byte_string_escape" style-ref="def:special-char">
       <match>\\\%{common_escape}</match>
     </context>
 
     <context id="raw-string" style-ref="string" class="string" class-disabled="no-spell-check">
-      <start>r(#*)"</start>
+      <start>b?r(#*)"</start>
       <end>"\%{1@start}</end>
       <include>
         <context ref="def:line-continue"/>
@@ -223,8 +230,21 @@ except according to those terms.
       </include>
     </context>
 
+    <context id="byte_string" style-ref="string" class="string" class-disabled="no-spell-check">
+      <start>b"</start>
+      <end>"</end>
+      <include>
+        <context ref="byte_string_escape"/>
+        <context ref="def:line-continue"/>
+      </include>
+    </context>
+
     <context id="char" style-ref="char">
-      <match extended="true">'([^\\']|\\\%{common_escape})'</match>
+      <match extended="true">'([^\\']|\\\%{common_escape}|\\\%{unicode_escape})'</match>
+    </context>
+
+    <context id="byte" style-ref="char">
+      <match extended="true">b'([^\\']|\\\%{common_escape})'</match>
     </context>
 
     <context id="attribute" style-ref="attribute" class="attribute">
@@ -251,8 +271,10 @@ except according to those terms.
         <context ref="number"/>
         <context ref="scope"/>
         <context ref="string"/>
+        <context ref="byte_string"/>
         <context ref="raw-string"/>
         <context ref="char"/>
+        <context ref="byte"/>
         <context ref="lifetime"/>
         <context ref="attribute"/>
       </include>
