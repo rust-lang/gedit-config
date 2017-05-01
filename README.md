@@ -1,4 +1,4 @@
-#Rust for GEdit
+# Rust for GEdit
 
 Add syntax highlighting for Mozilla Rust in GtkSourceView (used by GEdit).
 
