@@ -2,6 +2,10 @@
 
 Add syntax highlighting for Mozilla Rust in GtkSourceView (used by GEdit).
 
+__This has been upstreamed into GtkSourceView and is now included in applications like GEdit and GNOME Builder__
+
+If you require a manual installation please follow the directions below.
+
 __Instructions for Ubuntu Linux 12.04+__
 
 1. Close all instances of GEdit
